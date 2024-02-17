@@ -119,6 +119,14 @@ export const MOCKCONTACTS: Contact[] = [
     imageUrl: '../../assets/images/thompsonda.jpg',
     group: null
   },
+  {
+    id: '19',
+    name: 'Brother LeFoll',
+    email: 'scottlefollWgmail.com',
+    phone: '802-274-2549',
+    imageUrl: '../../assets/images/rigbys.jpg',
+    group: null
+  },
 
   // teams
   // index 13

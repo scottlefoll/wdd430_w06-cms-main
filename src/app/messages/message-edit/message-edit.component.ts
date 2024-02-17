@@ -17,7 +17,7 @@ export class MessageEditComponent {
   @ViewChild('msgText') msgText: ElementRef;
 
   // Create a string variable named currentSender and initialize it with the value of your name.
-  currentSender: string = 'Brother LeFoll';
+  currentSender: string = '19';
   cdRef: any;
 
   constructor(private messageService: MessageService) { }
@@ -29,8 +29,10 @@ export class MessageEditComponent {
     const subject = this.subject.nativeElement.value;
     // get the value stored in the msgText
     const msgText = this.msgText.nativeElement.value;
+    // get the value stored in the currentSender
+    const currentSender = this.currentSender;
     // Assign a hardcoded value to the id property of the new Message object.
-    const message = new Message('1', subject, msgText, this.currentSender);
+    const message = new Message('1', subject, msgText, currentSender);
     // Call the addMessageEvent.emit() method and pass the new Message object as an argument.
     this.addMessageEvent.emit(message);
     this.messageService.addMessage(message);

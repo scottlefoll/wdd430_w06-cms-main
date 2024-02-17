@@ -1,4 +1,9 @@
-<a class="row contact-item list-group-item clearfix" (click)="onSelected(contact)">
+<a
+   style="cursor: pointer;"
+   [routerLink]="['/contacts', contact.id]"
+   routerLinkActive="active"
+   class="row contact-item list-group-item clearfix"
+>
   <div [ngClass]="{'col-xs-12': contact.name.includes('team'), 'col-xs-6': !contact.name.includes('team')}">
     <h3>{{ contact.name }}</h3>
   </div>

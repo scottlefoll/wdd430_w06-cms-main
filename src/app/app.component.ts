@@ -6,15 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'demo';
+  title = 'WeLearn CMS';
   // implement selected feature with the switchview method
-  selectedFeature: string;
-  // implement the switchView method
+  // selectedFeature: string = "documents";
+  // // implement the switchView method
 
-  switchView(selectedFeature: string) {
-    if (this.selectedFeature?.toUpperCase() !== selectedFeature.toUpperCase()) {
-      this.selectedFeature = selectedFeature;
-    }
-  }
+  // switchView(selectedFeature: string) {
+  //   if (this.selectedFeature?.toUpperCase() !== selectedFeature.toUpperCase()) {
+  //     this.selectedFeature = selectedFeature;
+  //   }
+  // }
 
 }

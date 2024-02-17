@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'cms-header',
@@ -7,7 +7,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class HeaderComponent {
   //  create a new event emitter - Bro. Del Sol version
-  @Output() selectedFeatureEvent = new EventEmitter<string>();
+  // @Output() selectedFeatureEvent = new EventEmitter<string>();
   // version from recipe book
   // @Output() featureSelected = new EventEmitter<string>();
 
@@ -25,9 +25,9 @@ export class HeaderComponent {
 
   //  create method reponsible for emitting the selectedFeatureEvent.
   //  Bro. Del Sol version
-  onSelected(selectedEvent: string) {
-    this.selectedFeatureEvent.emit(selectedEvent);
-  }
+  // onSelected(selectedEvent: string) {
+  //   this.selectedFeatureEvent.emit(selectedEvent);
+  // }
 
   // version from recipe book
   // onSelect(feature: string) {

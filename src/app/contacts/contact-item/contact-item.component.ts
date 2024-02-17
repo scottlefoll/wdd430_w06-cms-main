@@ -13,14 +13,4 @@ export class ContactItemComponent {
 
   ngOnInit() {
   }
-
-  onSelected(contact: Contact){
-    if (!contact.name.includes('team')) {
-      // Emit the event or handle the click only if it is not a team header
-      this.contactService.contactSelectedEvent.emit(contact);
-    } else {
-      // If it is a team header, clear the selected contact
-      this.contactService.contactSelectedEvent.emit(null);
-    }
-  }
 }
