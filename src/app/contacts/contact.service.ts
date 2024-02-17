@@ -41,7 +41,7 @@ export class ContactService{
       return;
     }
     this.contacts.splice(pos, 1);
-    window.alert(contact.name + 'contact successfully deleted.');
+    window.alert(contact.name + ' contact successfully deleted.');
     // window.alert('Contact deleted successfully!');
     this.contactChangedEvent.emit(this.contacts.slice());
   }
